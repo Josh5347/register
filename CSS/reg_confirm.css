@@ -1,0 +1,59 @@
+﻿@charset "utf-8";
+.reg_table{
+    margin-left: auto;
+	margin-right: auto;	
+	border-collapse: collapse;
+/*	border: 1px solid #979797;*/
+}
+.reg_head_date{
+	width: 200px;
+	background-color: rgb(214, 214, 214);
+	border: 3px solid white;
+	
+}
+.reg_head{
+	width: 100px;
+	background-color: rgb(214, 214, 214);
+	border: 3px solid white;
+	
+}
+
+.reg_td{	
+	background-color: rgb(245, 245, 245);
+	border: 3px solid white;
+}
+.input_table, .inquire_table{
+    margin-left: auto;
+	margin-right: auto;
+	margin-top: 10pt;	
+	border-collapse: collapse;
+}
+.input_col1{
+	width : 100pt;
+	background-color: rgb(245, 245, 245);
+	border: 3px solid white;
+}
+.input_col2{
+	width : 440pt;
+	background-color: rgb(245, 245, 245);
+	border: 3px solid white;
+}
+#result_text{
+	font-weight: bolder;
+	color : red;
+}
+.inquire_hr{
+	width : 76pt;
+	background-color: rgb(214, 214, 214);
+	
+}
+.inquire_td{
+	background-color: rgb(245, 245, 245);
+	height: 10pt;
+}
+.form_inquire{
+	margin:0px; 
+	display:inline;
+}
+
+

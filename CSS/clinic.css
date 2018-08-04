@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+.table_clinic{
+	margin-left: auto;
+	margin-right: auto;	
+	border-collapse: collapse;
+	border: 1px solid #979797;
+}
+.hr_clinic {
+	border: 1px solid rgb(255, 255, 255);
+	width : 90%;
+}
+.hr_td {
+	background-color: rgb(214, 214, 214);
+	border: 3px solid rgb(255, 255, 255);
+	width: 140px;
+	text-align: center;
+}
+.tr_clinic{
+	border: 1px solid rgb(255, 255, 255);
+	width : 90%;
+}
+.tr_td{
+	background-color: rgb(245, 245, 245);
+	border: 3px solid rgb(255, 255, 255);
+	vertical-align: top; 	
+}
+.tr_td_td{
+	background-color: rgb(245, 245, 245);
+	border: 0px;
+}
+.room{
+	color: gray;
+}

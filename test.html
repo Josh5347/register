@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::網路掛號::</title>
+<link href="CSS/index.css" rel="stylesheet" type="text/css" />
+<link href="CSS/reg_confirm.css" rel="stylesheet" type="text/css" />
+<script src="JavaScript/reg_confirm.js" type="text/javascript"></script>
+<script src="JavaScript/verify.js" type="text/javascript"></script>
+<script src="JavaScript/SpryData.js" type="text/javascript"></script>
+</head>
+<body>
+<table class="table1">
+    <tr>
+      <td class="index_style2">
+	     <span class="hospital">
+        康健綜合醫院 - 網路掛號            
+        </span>          
+       </td>
+    </tr>
+    <tr>
+     <td class="index_style2">
+	      <table class="table2">
+          <tr class="menu">
+            <td class="menu_top_now"><a class="link1" href="index.html">網　路　掛　號</a></td>
+            <td class="menu_top"><a class="link1" href="cancel.html">查　詢 / 取　消　掛　號</a></td>
+            <td class="menu_top"><a class="link1" href="clinic_hour.html">門　診　時　間　表</a></td>
+            <td class="menu_top"><a class="link1" >醫　師　介　紹</a></td>
+          </tr>            
+        </table>      
+     </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="index_style6">預約掛號資料</span>
+      </td>
+    </tr>
+    <br />
+    <tr>
+      <td>
+        <table class="reg_table">
+          <tr>
+            <td class="reg_head_date">預約日期</td><td class="reg_head">午別</td><td class="reg_head">科別</td><td class="reg_head">診間</td><td class="reg_head">醫師</td><td class="reg_head">所掛號數</td>
+          </tr>
+          <tr>
+
+          </tr> 
+          <tr>
+            <td>  
+              <table class="input_table">
+                <form action="reg_confirm.php" method="post">
+                  <tr>
+                    <td class="input_col1">&nbsp初診掛號</td>
+                    <td class="input_col2"><input type="checkbox" name="new_check" id="newCheck" onchange="disp_phone()" /></td>
+                  </tr>
+                  <tr>
+                    <td class="input_col1"><span style="color:red">*</span>身分證號</td>
+                    <td class="input_col2"><input id="pid" name="pid" type="text" size="15" maxlength="10" /></td>
+                  </tr>
+                  <tr>
+                    <td class="input_col1"><span style="color:red">*</span>生日</td>
+                    <td class="input_col2">西元年<input type="text" id="birth_year" name="birth_year" size="7" maxlength="4" />
+                    
+                      <select id="selectmonth" name="birth_mon" onchange="changeday('selectday', this.value)">
+                        <option>請選擇</option>
+                        <option value=1>01</option><option value=2>02</option><option value=3>03</option><option value=4>04</option><option value=5>05</option>
+                        <option value=6>06</option><option value=7>07</option><option value=8>08</option><option value=9>09</option><option value=10>10</option>
+                        <option value=11>11</option><option value=12>12</option>
+                      </select>月
+                      <select id="selectday" name="birth_day">
+                      </select>日
+                    </td>
+                  </tr>
+                  <tr id="phone_tr">
+                    <td class="input_col1">&nbsp電話</td>
+                    <td class="input_col2">
+                      <input name="phone" type="text" size="15" maxlength="12" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="input_col1"></td>
+                    <td class="input_col2"><input type="submit" value="確認掛號" onclick="return verify();" /></td>
+                  </tr>
+                  <input name="insert" id="insert" type="hidden" value="patient_reg" />
+                  <tr>
+                  <td class="input_col1"></td>
+                  <td class="input_col2" id="result_text"><?php echo $reg_done; ?></td>
+                  </tr>
+                </form>
+              </table>
+            </td>  
+          </tr>
+        
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <br />
+        <br />
+        <br />
+        <span class="bottom_text1">康健綜合醫院</span><br />
+        <span class="bottom_text1">71742 台南市永康區中山南路539號 電話：(06) 2394029 傳真：(06) 2396394</span><br />
+        <span class="bottom_text1">本網站建議使用IE7.0以上瀏覽器，最佳解析度為1024×768</span>    
+      </td>
+    </tr>
+</table>
+</body>
+</html>
